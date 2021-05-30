@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.container { 
+    height: 200px;
+    color: honeydew;
+    position: absolute; ;
+    left: 240px;
+    right: 240px;
+    top: 50px;
+    bottom: 300px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, 0.498039);
+    font-family: 'Cookie', cursive;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  #btn {
+    background: #222;
+    height: 25px;
+    min-width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 20px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  #btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  #noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  #btn:hover {
+    background: transparent;
+  }
+  
+  #btn:hover #circle {
+    height: 25px;
+    width: 100px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
