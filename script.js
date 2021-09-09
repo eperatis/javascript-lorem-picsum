@@ -1,8 +1,8 @@
-window.onload = function () {
+window.onload = () => {
     changeBackground();
 };
 
-function getResolution() {
+getResolution = () => {
     var win = window,
         doc = document,
         docElem = doc.documentElement,
@@ -12,7 +12,7 @@ function getResolution() {
     alert(x + ' × ' + y);
 }
 
-function changeBackground() {
+changeBackground =() => {
     document.getElementsByTagName("body")[0].style.backgroundImage =
         "url(https://picsum.photos/" + window.innerWidth + "/" + window.innerHeight + "/?random&rnd" + new Date().getTime() + ")"
 }
